@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-customers
+      author: whoareyou
+      changes:
+        - sqlFile:
+            path: db/changelog/sql/customers.sql
+
+  - changeSet:
+      - changeSet:
+        id: create-table-orders
+        author: whoareyou
+        changes:
+          - sqlFile:
+              path: db/changelog/sql/orders.sql
